@@ -1,0 +1,9 @@
+app:
+  envs:
+  - USER_NAME: UserName
+workflows:
+  test:
+    steps:
+    - script:
+        inputs:
+        - content: echo "Hello ${USERNAME}!"
